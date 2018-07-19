@@ -6,14 +6,14 @@ app.controller('kitBuilderController', function($scope) {
 
 	$scope.selected = null;
 	$scope.required = [
-					{"name": "RequiredComponent1", "image": "kit01.jpg", "pdf": "MC_0005889984.pdf"},
-					{"name": "RequiredComponent2", "image": "kit02.jpg", "pdf": "MC_0007761663.pdf"},
-					{"name": "RequiredComponent3", "image": "kit03.jpg", "pdf": "MC_0007847812.pdf"}
+					{"name": "RequiredComponent1", "image": "kit1.jpg", "pdf": "kit1-pdf.pdf"},
+					{"name": "RequiredComponent2", "image": "kit2.jpg", "pdf": "kit2-pdf.pdf"},
+					{"name": "RequiredComponent3", "image": "kit3.jpg", "pdf": "kit3-pdf.pdf"}
 				];
 	$scope.optional = [
-					{"name": "OptionalComponent1", "image": "kit04.jpg", "pdf": "MC_0008027354.pdf"},
-					{"name": "OptionalComponent2", "image": "kit05.jpg", "pdf": "MC_0008205763.pdf"},
-					{"name": "OptionalComponent3", "image": "kit06.jpg", "pdf": "MC_0008256953.pdf"}
+					{"name": "OptionalComponent1", "image": "kit4.jpg", "pdf": "kit4-pdf.pdf"},
+					{"name": "OptionalComponent2", "image": "kit5.jpg", "pdf": "kit5-pdf.pdf"},
+					{"name": "OptionalComponent3", "image": "kit6.jpg", "pdf": "kit6-pdf.pdf"}
 				];
 
 	// Functions
