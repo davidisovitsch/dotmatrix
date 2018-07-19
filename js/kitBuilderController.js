@@ -1,4 +1,4 @@
-app = angular.module('kitBuilder', ['dndLists']);
+app = angular.module('tutorialWebApp', ['dndLists']);
 
 app.controller('kitBuilderController', function($scope) {
 
