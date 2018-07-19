@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<title>Kit Builder</title>
+	<link href="../css/kitBuilder.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="../js/angular-drag-and-drop-lists.js"></script>
+</head>
+
+<body ng-app="kitBuilder">
+
+	<div>
+		<h2>Kit Builder</h2>
+	</div>
+
+	<div ng-controller="kitBuilderController">
+
+		<div>Selected: {{selected}}</div>
+		<div>Required Components: {{required}}</div>
+		<div>Optional Components: {{optional}}</div>
+		<p>
+		<table border="1">
+			<tr>
+				<td>Required</td>
+				<td>Optional</td>
+			</tr>
+			<tr>
+				<td>
+					<ul dnd-list="required">
+    					<li ng-repeat="component in required"
+    						dnd-draggable="component"
+    						dnd-moved="required.splice($index, 1)"
+        					dnd-effect-allowed="move"
+        					dnd-selected="selected = component"
+        					ng-class="{'selected': selected === component">
+    						<a href="../pdf/{{component.pdf}}"><img src="../img/{{component.image}}"></a>
+						</li>
+					</ul>
+				</td>
+				<td>
+					<ul dnd-list="optional">
+    					<li ng-repeat="component in optional"
+    						dnd-draggable="component"
+    						dnd-moved="optional.splice($index, 1)"
+        					dnd-effect-allowed="move"
+        					dnd-selected="selected = component"
+        					ng-class="{'selected': selected === component">
+    						<a href="../pdf/{{component.pdf}}"><img src="../img/{{component.image}}"></a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+
+	<script src="../js/kitBuilderController.js"></script>
+
+</body>
+
+</html>
