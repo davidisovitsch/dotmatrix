@@ -1,0 +1,1589 @@
+/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+
+/*
+* Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block
+}
+
+/*
+* Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.scrlPad {
+	padding-top:89px;
+}
+
+/*
+* Prevents modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+* Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
+* Known issue:no IE 6 support.
+*/
+[hidden] {
+    display: none
+}
+
+/* ==========================================================================
+Base
+========================================================================== */
+/*
+* 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevents iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+* Addresses `font-family` inconsistency between `textarea` and other form
+* elements.
+*/
+html, button, input, select, textarea {
+    font-family: sans-serif;
+    font-family: 'lato', sans-serif;
+}
+html, body {
+   
+    width: 100%;
+	
+}
+
+
+/*
+* Addresses margins handled incorrectly in IE 6/7.
+*/
+body {
+    margin: 0;
+    font-family: 'arial', sans-serif;
+	position:relative;
+}
+
+/*
+* Font Smoothing
+*/
+html, html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.navbar-toggle .icon-bar {
+    background-color: #1c57a5;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 22px;
+}
+
+
+/* ==========================================================================
+Links
+========================================================================== */
+/*
+* Addresses `outline` inconsistency between Chrome and other browsers.
+*/
+
+a:focus {
+    outline: thin dotted;
+    text-decoration: none;
+}
+
+/*
+* Improves readability when focused and also mouse hovered in all browsers.
+*/
+a:active, a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+/*
+* Addresses font sizes and margins set differently in IE 6/7.
+* Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
+*/
+
+h1 {
+    margin: 0.50em 0;
+    font-size: 2em;
+}
+h2 {
+    margin: 0.63em 0;
+    font-size: 1.5em;
+}
+h3 {
+    margin: .25em 0;
+	font-size: 1.17em;
+}
+h4 {
+    margin: 1.10em 0;
+    font-size: 1em;
+}
+h5 {
+    margin: .47em 0;
+    font-size: 0.83em;
+}
+h6 {
+    margin: 2.13em 0;
+    font-size: 0.75em;
+}
+
+/*
+* Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+*/
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+/*
+* Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+*/
+b, strong {
+    font-weight: bold
+}
+blockquote {
+    margin: 0px
+}
+
+/*
+* Addresses styling not present in Safari 5 and Chrome.
+*/
+dfn {
+    font-style: italic
+}
+
+/*
+* Addresses styling not present in IE 6/7/8/9.
+*/
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+p, pre {
+    margin: 1em 0
+}
+
+/*
+* Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+*/
+code, kbd, pre, samp {
+    font-size: 1em;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+}
+
+/*
+* Improves readability of pre-formatted text in all browsers.
+*/
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+* Addresses CSS quotes not supported in IE 6/7.
+*/
+q {
+    quotes: none
+}
+
+/*
+* Addresses `quotes` property not supported in Safari 4.
+*/
+q:before, q:after {
+    content: '';
+    content: none;
+}
+small {
+    font-size: 75%
+}
+
+/*
+* Prevents `sub` and `sup` affecting `line-height` in all browsers.
+*/
+sub, sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+}
+sup {
+    top: -0.5em
+}
+sub {
+    bottom: -0.25em
+}
+
+
+.nav-tabs > li {
+    float: left;
+    font-size: 1.5em;
+    margin-bottom: -1px;
+}
+
+.smaller {
+	font-size:12px;
+}
+
+.slead{
+	font-weight:bold;
+}
+
+.exampleText{
+	color:#888;
+}
+
+/* ==========================================================================
+Lists
+========================================================================== */
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+
+dl, menu, ol, ul {
+    margin: .4em 0
+}
+dd {
+    margin: 0 0 0 40px
+}
+
+/*
+* Addresses paddings set differently in IE 6/7.
+
+menu, ol, ul {
+    padding: 0
+}*/
+
+/*
+* Corrects list images handled incorrectly in IE 7.
+*/
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+Embedded content
+========================================================================== */
+/*
+* 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+* 2. Improves image quality when scaled in IE 7.
+*/
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+* Corrects overflow displayed oddly in IE 9.
+*/
+svg:not(:root) {
+    overflow: hidden
+}
+
+/* ==========================================================================
+Figures
+========================================================================== */
+/*
+* Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+*/
+
+figure {
+    margin: 0
+}
+
+/* ==========================================================================
+Forms
+========================================================================== */
+/*
+* Corrects margin displayed oddly in IE 6/7.
+*/
+
+form {
+    margin: 0
+}
+
+/*
+* Define consistent border, margin, and padding.
+*/
+fieldset {
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+}
+
+/*
+* 1. Corrects color not being inherited in IE 6/7/8/9.
+* 2. Corrects text not wrapping in Firefox 3.
+* 3. Corrects alignment displayed oddly in IE 6/7.
+*/
+legend {
+    padding: 0;
+    border: 0; /* 1 */
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+* 1. Corrects font size not being inherited in all browsers.
+* 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
+* 3. Improves appearance and consistency in all browsers.
+*/
+button, input, select, textarea {
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    font-size: 100%; /* 1 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+* Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
+* the UA stylesheet.
+*/
+button, input {
+    line-height: normal
+}
+
+/*
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Corrects inability to style clickable `input` types in iOS.
+* 3. Improves usability and consistency of cursor style between image-type
+*    `input` and others.
+* 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+*    Known issue:inner spacing remains in IE 6.
+*/
+button, html input[type="button"], /* 1 */
+input[type="reset"], input[type="submit"] {
+    cursor: pointer; /* 3 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible; /* 4 */
+}
+
+/*
+* Re-set default cursor for disabled elements.
+*/
+button[disabled], input[disabled] {
+    cursor: default
+}
+
+/*
+* 1. Addresses box sizing set to content-box in IE 8/9.
+* 2. Removes excess padding in IE 8/9.
+* 3. Removes excess padding in IE 7.
+*    Known issue:excess padding remains in IE 6.
+*/
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+*    (include `-moz` to future-proof).
+*/
+input[type="search"] {
+    /* 2 */
+    box-sizing: content-box;
+    -webkit-appearance: textfield; /* 1 */
+    nowhitespace: afterproperty;
+	width:400px;
+	height:20px;
+}
+
+/*
+* Removes inner padding and search cancel button in Safari 5 and Chrome
+* on OS X.
+*/
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+/*
+* Removes inner padding and border in Firefox 3+.
+*/
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*
+* 1. Removes default vertical scrollbar in IE 6/7/8/9.
+* 2. Improves readability and alignment in all browsers.
+*/
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+Tables
+========================================================================== */
+/*
+* Remove most spacing between table cells.
+*/
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: #e2e2e2;
+}
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: color, border-color, background-color;
+    transition-property: color, border-color, background-color;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+p {
+    font-size: 14px;
+    line-height: 20px;
+}
+a {
+	color: #1c57a5;
+}
+a:hover, a:focus {
+    color: #848484;
+    text-decoration: none;
+}
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grid.png);
+}
+
+.spacer {
+    margin-top: 20px; /* define margin as you see fit */
+}
+
+.bot-spacer {
+    margin-bottom: 40px; /* define margin as you see fit */
+}
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+.use-btn {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 20px 50px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #1c57a5;
+    font-size: 16px;
+}
+.use-btn:hover, .use-btn:focus {
+    background-color: #1c57a5;
+    color: #fff;
+    text-decoration: none;
+}
+.learn-btn, .download-btn {
+    display: inline-block;
+    padding: 18px 46px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+}
+.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
+    border-color: #73d0da;
+    color: #73d0da;
+    text-decoration: none;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #323a45;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.read-more-btn i, .download-btn i {
+    margin-left: 5px
+}
+.showcase .download-btn {
+    margin-top: 50px
+}
+.download .download-btn {
+    margin-top: 0px
+}
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+.nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 999999;
+    padding: 10px 35px 16px 0px;
+    cursor: pointer;
+}
+.nav-toggle:focus {
+    outline: none;
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 1px;
+    background: #e2e2e2;
+    cursor: pointer;
+}
+.nav-toggle span:before {
+    top: -10px
+}
+.nav-toggle span:after {
+    bottom: -10px
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.nav-toggle.active span {
+    background-color: transparent
+}
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+    top: 0
+}
+.nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+    top: 10px;
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+.navicon {
+    position: relative;
+    height: 26px;
+}
+.navicon p {
+    margin: 1px 50px 0 0
+}
+.navicon-fixed {
+    position: fixed;
+    top: 59px;
+    right: 143px;
+	z-index:9999999;
+}
+.navicon-fixed p {
+    margin: 1px 50px 0 0;
+	color: #e2e2e2;
+}
+
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero {
+    position: relative;
+    /*padding: 60px 0 60px 0;*/
+   /* min-height: 800px;*/
+    background: rgb(40, 70, 102) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+	/*background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;*/
+}
+.hero h1 {
+    margin: 20px 0 5px 0;
+    font-weight: 300;
+    font-size: 45px;
+}
+.hero h1 span {
+    display: inline-block;
+    color: #a1a9b0;
+}
+#home {
+    width: 100%;
+    height: 100%;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+}
+header i {
+    margin-left: 5px
+}
+
+/* ==========================================================================
+Video
+========================================================================== */
+section.video {
+   background: url('../img/murray.jpg') no-repeat center center fixed;
+   background-size: cover;
+}
+   
+section.video i {
+    margin-right: 10px;
+    color: #323a45;
+    vertical-align: middle;
+    font-size: 50px;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+
+}
+section.video h1 {
+    font-weight: 400;
+    font-size: 20px;
+}
+section.video {
+    padding: 60px 0;
+    background-color: #f6f7f9;
+}
+section.video a {
+    color: #323a45
+}
+section.video a:hover, section.video a:focus {
+    color: #73d0da;
+    text-decoration: none;
+}
+section.video a:hover i, section.video a:focus i {
+    color: #73d0da
+}
+
+/* ==========================================================================
+Custom Slider Controls (Flickity)
+========================================================================== */
+.flickity-page-dots .dot {
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+/* ==========================================================================
+Features Slider
+========================================================================== */
+.features-bg {
+    position: relative;
+    min-height: 400px;
+    background: url('../img/features-intro-01.jpg') no-repeat center center;
+    background-size: cover;
+}
+.features-img {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    line-height: 400px;
+}
+.features-slider {
+    position: relative;
+    padding: 11% 100px 10% 100px;
+    height: 400px;
+    background-color: #3F6184;
+}
+.features-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.features-slider ul li {
+    width: 100%;
+}
+.features-slider li h1 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+.features-slider li p {
+    color: #fff;
+    font-size: 14px;
+}
+.features-intro-img {
+    position: relative
+}
+.slides li h1 {
+    margin: 0;
+    padding: 0;
+}
+.features-slider .flickity-page-dots {
+    text-align: left;
+    margin-top: 50px;
+    position: static;
+}
+.features-slider .flickity-page-dots .dot {
+    margin: 0 12px 0 0;
+}
+
+/* ==========================================================================
+LOGO
+========================================================================== */
+#logo{	margin-left:25px;
+	
+}
+/* ==========================================================================
+Features List
+========================================================================== */
+.features-list {
+    padding: 20px 0
+}
+.features-list h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #24374b;
+    font-size: 20px;
+}
+.features-list p {
+    margin-bottom: 20px;
+    color:#444;
+}
+.feature-content {
+    display: inline-block;
+    margin-left: 0;
+    width: 100%;
+}
+.feature-icon {
+    display: inline-block;
+   
+	margin: 0px 10px 20px 25px;
+    width: 90px;
+    height: 90px;
+    border: solid 2px #1c57a5;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+.feature-icon i {
+    color: #1c57a5
+}
+
+.border-right{
+	
+	border-right:dotted thin #444;
+	padding: 0px 20px 0px 20px;
+	min-height: 225px;
+}
+
+
+/* ==========================================================================
+ABOUT
+========================================================================== */
+.about-list {
+    padding: 35px 0;
+	background-color:#e2e2e2;
+}
+.about-list h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color:#1c57a5;
+    font-size: 40px;
+}
+.about-list p {
+    margin-bottom: 20px;
+    color: #778899;
+}
+.about-content {
+    display: inline-block;
+    margin-left: 0;
+    width: 65%;
+}
+
+/* ==========================================================================
+Blockquote
+========================================================================== */
+blockquote {
+    margin: 40px 0 0;
+    padding: 0;
+    border: none;
+}
+blockquote p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    vertical-align: top;
+    font-style: italic;
+}
+blockquote .avatar {
+    display: inline-block;
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+}
+blockquote .logo-quote {
+    display: inline-block;
+    margin: 0 0 0 90px;
+}
+
+/* ==========================================================================
+VOICE
+========================================================================== */
+
+.voice {
+   background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+   background-size: cover;
+}
+.voice p {
+    margin-bottom: 25px;
+    color: #fff;
+}
+.vicez {
+    position: absolute;
+    /*top: -60px;*/
+    left: 20%;
+    min-height: 406px;
+    width: 800px;
+    background: url('../img/voice.jpg') no-repeat center center;
+}
+.voice-wrap {
+    position: relative;
+    padding: 100px 0;
+    min-height: 600px;
+}
+.voice-content {
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    width: 800px;
+    height: 406px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+Showcase
+========================================================================== */
+.showcase {
+    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.showcase h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+.showcase p {
+    margin-bottom: 25px;
+    color: #fff;
+}
+.device {
+    position: absolute;
+    top: -60px;
+    left: 20%;
+    min-height: 676px;
+    width: 359px;
+    background: url('../img/iphone-skeleton.png') no-repeat center center;
+}
+
+.device-content {
+    position: absolute;
+    top: 115px;
+    left: 56px;
+    width: 247px;
+    height: 445px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.device-content img {
+    width: 247px;
+    height: 445px;
+}
+.showcase-wrap {
+    position: relative;
+    padding: 100px 0;
+    min-height: 600px;
+}
+
+.showcase-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.showcase-slider .flickity-page-dots {
+    bottom: 20px;
+}
+
+
+
+/* ==========================================================================
+Screenshots Intro
+========================================================================== */
+.screenshots-intro {
+    padding: 170px 0 100px 0;
+    background-color: #f6f7f9;
+}
+.screenshots-intro h1 {
+    margin-bottom: 20px;
+    color: #24374b;
+    font-weight: 400;
+    font-size: 22px;
+}
+.screenshots-intro p {
+    margin-bottom: 25px;
+    color: #778899;
+}
+
+/* ==========================================================================
+Screenshots
+========================================================================== */
+.screenshots ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.screenshots ul li {
+    float: left;
+    min-height: 100%;
+    width: 25%;
+    background-color: #000;
+    list-style: none;
+}
+.screenshots figure {
+    position: relative;
+    overflow: hidden;
+}
+.screenshots figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover img, .screenshots figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.screenshots figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 97, 132, 0.85);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figcaption a {
+    color: #fff
+}
+.screenshots figcaption a:hover, .screenshots figcaption a:focus {
+    color: #73d0da
+}
+.screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
+    opacity: 1
+}
+.visible {
+    opacity: 1
+}
+.screenshots figure.cs-hover figcaption {
+    opacity: 1
+}
+.screenshots figcaption i {
+    font-size: 35px
+}
+.screenshots figcaption p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.screenshots figcaption .caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+/* ==========================================================================
+Download Now
+========================================================================== */
+.download {
+    padding: 30px 0;
+    background-color: #1c57a5;
+	margin-top:35px;
+}
+.download h1 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+/* ==========================================================================
+Footer
+========================================================================== */
+footer {
+    padding: 35px 0;
+	background:#e2e2e2;
+	
+}
+footer p {
+    color: #383535;
+    font-size: 12px;
+}
+footer ul {
+    margin-top: 30px
+}
+footer li {
+    float: left;
+    margin-right: 15%;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+footer li a {
+    color: #3f6184
+}
+footer li:last-child {
+    margin-right: 0
+}
+
+/* ==========================================================================
+Nav Overlay
+========================================================================== */
+/* Overlay style */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 82, 113, 0.95);
+}
+
+/* Menu style */
+.overlay nav {
+    position: relative;
+    top: 50%;
+    height: 60%;
+    text-align: center;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay ul {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.overlay ul li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.overlay ul li:last-child {
+    margin-right: 0px
+}
+.overlay ul li i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.overlay ul li a {
+    display: block;
+    padding: 50px 0;
+    min-width: 190px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background-color: #1c57a5;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.overlay ul li a:hover, .overlay ul li a:focus {
+    border-color: #adafaf;
+    color: #adafaf;
+}
+
+/* Effects */
+.overlay-boxify {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-boxify.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.overlay-boxify nav ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.overlay-boxify.open nav ul:first-child li:first-child {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.overlay-boxify.open nav ul:first-child li:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.overlay-boxify.open nav ul li {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* ==========================================================================
+Waypoints
+========================================================================== */
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
+    visibility: hidden
+}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+    visibility: visible
+}
+.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+
+
+
+/* ==========================================================================
+Color
+========================================================================== */
+
+
+.colorText{
+	color:white;
+}
+.colorTextR{
+	color:black;
+}
+
+.nwblue{ background-color:#1c57a5;}
+.white{ background-color:#fff; border: 1px solid #AAA;}
+.black{ background-color:#000;}
+.cg3{ background-color:#c8c9c7;}
+.cg7{ background-color:#97999b;}
+.cg10{ background-color:#63666a;}
+.wg1{ background-color:#d7d2cb;}
+.wg8{ background-color:#8c8279;}
+.wg11{ background-color:#6e6259;}
+.darkBlue{ background-color:#003B5C;}
+.mutedBlue{ background-color:#253746;}
+.darkTeal{ background-color:#004851;}
+.darkMuted{ background-color:#1c57a5;}
+.darkMutedgrn{ background-color:#3E5D58;}
+.darkGreen{ background-color:#36573B;}
+.darkYellow{ background-color:#5A4522;}
+.darkOrange{ background-color:#7B4931;}
+.darkRed{ background-color:#5D2A2C;}
+.darkFusch{ background-color:#672146;}
+.darkPurple{ background-color:#403A60;}
+.medBlue{ background-color:#326295;}
+.medMutedBlue{ background-color:#6BA4B8;}
+.medTeal{ background-color:#007D8A;}
+.medMutedGreen{ background-color:#279989;}
+.medGreen{ background-color:#3A913F;}
+.medYellow{ background-color:#CBA052;}
+.medOrange{ background-color:#A65523;}
+.medRed{ background-color:#9E2A2B;}
+.medFusch{ background-color:#A83D72;}
+.medPurple{ background-color:#6F5091;}
+.accBlue{ background-color:#0072CE;}
+.accMutedBlue{ background-color:#5BC2E7;}
+.accTeal{ background-color:#2DCCD3;}
+.accMutedGreen{ background-color:#3CDBC0;}
+.accGreen{ background-color:#6CC24A;}
+.accYellow{ background-color:#FFC658;}
+.accOrange{ background-color:#FF671F;}
+.accRed{ background-color:#EF3340;}
+.accFusch{ background-color:#D539B5;}
+.accPurple{ background-color:#A05EB5;}
+
+.crapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.box {
+  width: 85px;
+  height: 70px;
+  border: 1px solid #e2e2e2;
+  float: left;
+  margin: 5px;
+}
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.basic_swatch { margin:1em; padding:1em; color:#ccc; background-color:#fff; border:1px solid #ccc; }
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px; }
+/* xColor section - basic style */
+.cd-colors li {
+  text-align: center;
+  width: 48%;
+  float: left;
+  margin: 0 4% 1em 0; }
+  .cd-colors li:nth-of-type(2n) {
+    margin-right: 0; }
+.cd-colors .cd-color-swatch {
+  position: relative;
+  width: 100%;
+  padding: 50% 0; }
+  .cd-colors .cd-color-swatch::before, .cd-colors .cd-color-swatch::after {
+    /* lighter and darker color shades of the same swatch */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 20%; }
+  .cd-colors .cd-color-swatch::before {
+    left: 0; }
+  .cd-colors .cd-color-swatch::after {
+    right: 0; }
+.cd-colors b {
+  display: block;
+  padding: .6em 0; }
+.cd-colors li:nth-of-type(1) .cd-color-swatch {
+  background: #1c57a5; }
+  .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
+    background: #759de8; }
+  .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
+    background: #497fe0; }
+.cd-colors li:nth-of-type(2) .cd-color-swatch {
+  background: #fff; }
+  .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
+    background: #fff; }
+  .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
+    background: #fff; }
+.cd-colors li:nth-of-type(3) .cd-color-swatch {
+  background: #000; }
+  .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
+    background: #e87a75; }
+  .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
+    background: #e05049; }
+.cd-colors li:nth-of-type(4) .cd-color-swatch {
+  background: #e6e6e6; }
+  .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
+    background: #f3f3f3; }
+  .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
+    background: #d9d9d9; }
+.cd-colors li:nth-of-type(5) .cd-color-swatch {
+  background: #ffffff; }
+  .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
+    background: white; }
+  .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
+    background: #f2f2f2; }
+.cd-colors li:nth-of-type(6) .cd-color-swatch {
+  background: #fda01a; }
+  .cd-colors li:nth-of-type(6) .cd-color-swatch::before {
+    background: #fdaa33; }
+  .cd-colors li:nth-of-type(6) .cd-color-swatch::after {
+    background: #fb9502; }
+.cd-colors li:nth-of-type(7) .cd-color-swatch {
+  background: #5bc6e8; }
+  .cd-colors li:nth-of-type(7) .cd-color-swatch::before {
+    background: #71ceeb; }
+  .cd-colors li:nth-of-type(7) .cd-color-swatch::after {
+    background: #45bee5; }
+	
+	.cd-colors li:nth-of-type(8) .cd-color-swatch {
+  background: #5a447a; }
+  .cd-colors li:nth-of-type(8) .cd-color-swatch::before {
+    background: #a08ebb; }
+  .cd-colors li:nth-of-type(8) .cd-color-swatch::after {
+    background: #381b63; }
+	.cd-colors li:nth-of-type(9) .cd-color-swatch {
+  background: #416812; }
+  .cd-colors li:nth-of-type(9) .cd-color-swatch::before {
+    background: #6f973f; }
+  .cd-colors li:nth-of-type(9) .cd-color-swatch::after {
+    background: #375a0d; }
+	.cd-colors li:nth-of-type(10) .cd-color-swatch {
+  background: #718674; }
+  .cd-colors li:nth-of-type(10) .cd-color-swatch::before {
+    background: #9aa89c; }
+  .cd-colors li:nth-of-type(10) .cd-color-swatch::after {
+    background: #5d7661; }
+	
+	
+	
+	@media only screen and (min-width: 768px) {
+  .cd-colors li {
+    width: 19%;
+    float: left;
+    margin: 0 1.25% 1em 0;
+	list-style:none; }
+    .cd-colors li:nth-of-type(2n) {
+      margin-right: 1.25%; }
+    .cd-colors li:nth-of-type(5n) {
+      margin-right: 0; } }
+
+.cd-typography .cd-box,
+.cd-voice .cd-box,
+.cd-icons .cd-box,
+.cd-logo .cd-box,
+.cd-form .cd-box {
+  padding: 1em; }
+  @media only screen and (min-width: 768px) {
+    .cd-typography .cd-box .cd-box,
+    .cd-voice .cd-box .cd-box,
+    .cd-icons .cd-box .cd-box,
+    .cd-logo .cd-box .cd-box,
+    .cd-form .cd-box .cd-box {
+      padding: 2em; } }
+	  
+	  
+	  
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+.fill{width:100%;height:100%;background-position:center;background-size:cover;}
+
+/* faster sliding speed */
+.carousel-inner > .item {
+    -webkit-transition: 0.3s ease-in-out left;
+    -moz-transition: 0.3s ease-in-out left;
+    -o-transition: 0.3s ease-in-out left;
+    transition: 0.3s ease-in-out left;
+}
+
+
+
+/* ==========================================================================
+Dashboard
+========================================================================== */	
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+  padding-top:6px;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 57px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    /*padding: 20px;*/
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #e2e2e2;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #1c57a5;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+
+  padding-top: 54px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.carousel-caption{
+	
+	background-color:#1c57a5;
+	opacity:0.9;
+	left:25%;
+	right:25%
+}
+
+
+.footer-disclaimer{
+	align-content:center;
+	font-color:#000000;
+}
+
+.panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    min-height: 60px;
+    padding: 10px 15px;
+}
+.panel-footer {
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    padding: 10px 15px;
+}
+ .nav-pills > li > a.active {
+      background: #1c57a5;
+      color: #fff;
+ }

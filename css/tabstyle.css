@@ -1,0 +1,87 @@
+/* ==========================================================================
+NAV
+========================================================================== */
+
+
+
+.sticky {
+    border-top: 0 none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000000;
+	background-color:#333;
+	border-bottom:solid 3px #1c57a5;
+}
+.sticky > ul {
+    border-top: 0 none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000000;
+	background-color:#fff;
+	border-bottom:solid 3px #1c57a5;
+}
+
+.sticky > li {
+	 background-color:#333;
+	 color:#fff;
+	 z-index: 100000000;
+	
+	}
+	.sticky > li > a {
+
+	 color:#fff;
+	
+	}
+	.sticky > li  > a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+/* ==========================================================================
+TABS
+========================================================================== */	
+
+#myTabs{
+	
+	
+height:55px;
+background-color:#fff;	
+	
+}
+#myTabs > ul{
+	
+	
+
+background-color:#fff;	
+	
+}
+.nav-tabs>li {
+  
+  min-width:33%;
+}
+
+/* tab color */
+.nav-tabs>li>a {
+  background-color: #ddd; 
+  border-color: #777777;
+  color:#fff;
+  min-width:65%;
+  border-radius:0;
+}
+
+/* active tab color */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #fff;
+  background-color: #1c57a5;
+  border: 1px solid #888888;
+  min-width:65%;
+}
+
+/* hover tab color */
+.nav-tabs>li>a:hover {
+  border-color: #000000;
+  background-color: #111111;
+}
