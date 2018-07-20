@@ -21,6 +21,7 @@ app.controller('kitBuilderController', function($scope) {
 	
 	$scope.send_to_email = null;
 	$scope.show_email = false;
+	$scope.show_preview = false;
 
 	$scope.first_name = null;
 	$scope.last_name = null;
@@ -68,6 +69,18 @@ app.controller('kitBuilderController', function($scope) {
 
 	$scope.cancelOrder = function() {
 		$scope.show_order = false;
+	};
+
+	$scope.previewPdf = function(required) {
+		$scope.show_preview = !$scope.show_preview;
+		var pdf_urls = [];
+
+		angular.forEach(required, function(value, key) {
+			pdf_urls.push('../pdf/' + value.pdf);
+		});
+
+		console.log(pdf_urls);
+		loadPdf(pdf_urls);
 	};
 
 	// Retrieving Data

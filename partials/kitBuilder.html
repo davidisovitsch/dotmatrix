@@ -4,6 +4,7 @@
 	<title>Custom Kit Builder</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js""></script>
 	<script src="../js/angular-drag-and-drop-lists.js"></script>
+	<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 </head>
 
 <style>
@@ -132,6 +133,7 @@ td {
 					</ul>
 					<br>
 					<br>
+					<button class="button" ng-click="previewPdf(required);">Preview</button>
 					<button class="button" ng-click="displayPdf('../pdf/kit1-pdf.pdf');">Quick Print</button>
 					<button class="button" ng-click="showEmail();">Email</button>
 					<button class="button" ng-click="showOrder();">Place Order</button>
@@ -157,6 +159,18 @@ td {
 							<input type="button" ng-click="cancelOrder();" value="Cancel"/>
 						</form>
 					</div>
+
+			        <div ng-show="show_preview">
+			        	<br>
+            			<button id="prev">Previous</button>
+            			<button id="next">Next</button>
+            			&nbsp; &nbsp;
+            			<span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+	        			<div>
+    	        			<canvas id="the-canvas" style="border:1px solid black"></canvas>
+        				</div>
+        			</div>
+
 				</td>
 			</tr>
 		</table>
@@ -164,6 +178,7 @@ td {
 	</div>
 
 	<script src="../js/kitBuilderController.js"></script>
+	<script src="../js/pdfBuilder.js"></script>
 
 </body>
 
