@@ -7,21 +7,66 @@
 </head>
 
 <style>
+
+body {
+    margin: 0;
+    font-family: 'arial', sans-serif;
+}
+
+table {
+    width:100%;
+}
+
+tr {
+	align:center;
+}
+
+td {
+	vertical-align:top;
+	align:center;
+	padding: 10px;
+}
+
+.listno {
+	list-style:none;
+	min-height:50px;
+}
+
+.listno .dndDraggingSource {
+	display:none;
+}
+
+.componentheader {
+	background: #1c57a5;
+	color: white;
+    text-align: center;
+}
+
+.button {
+    background-color: #1c57a5;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 </style>
 
 <body ng-app="kitBuilder">
 
 	<div ng-controller="kitBuilderController">
 
-		<table style="width:100%;">
+		<table>
 			<tr>
-				<td style="width:25%">Required</td>
-				<td style="width:25%">Optional</td>
-				<td style="width:50%"></td>
+				<td style="width:25%" class="componentheader">Required</td>
+				<td style="width:25%" class="componentheader">Optional</td>
+				<td style="width:50%" class="componentheader"></td>
 			</tr>
 			<tr>
 				<td>
-					<ul dnd-list="required">
+					<ul dnd-list="required" class="listno dndDraggingSource">
     					<li ng-repeat="component in required"
     						dnd-draggable="component"
     						dnd-moved="required.splice($index, 1)"
@@ -33,7 +78,7 @@
 					</ul>
 				</td>
 				<td>
-					<ul dnd-list="optional">
+					<ul dnd-list="optional" class="listno dndDraggingSource">
     					<li ng-repeat="component in optional"
     						dnd-draggable="component"
     						dnd-moved="optional.splice($index, 1)"
@@ -44,14 +89,20 @@
 						</li>
 					</ul>
 				</td>
-				<td style="vertical-align:top">
-					Explains living benefits of annuities
+				<td>
 					<br>
+					<div style="color: #169dd5;">Invest for tomorrow - today. Soloist Variable Annuity. Key Facts (NFM-1587AO)</div>
 					<ul>
+						<li>Explains living benefits of annuities</li>
 						<li>Intended for distribution to clients</li>
 						<li>Use for closing the sale</li>
 						<li>Use for client education</li>
 					</ul>
+					<br>
+					<br>
+					<button class="button" onClick="window.open('../pdf/kit1-pdf.pdf');">Quick Print</button>
+					<button class="button">Email</button>
+					<button class="button">Place Order</button>
 				</td>
 			</tr>
 		</table>
