@@ -13,7 +13,10 @@ app.controller('kitBuilderController', function($scope) {
 	$scope.optional = [
 					{"name": "FI/ID/WH Nationwide Your Life Index Universal Life Client Kit TN", "image": "kit4.jpg", "pdf": "kit4-pdf.pdf", "required": false},
 					{"name": "FI ID WH Your Life IUL Protector Client Kit IN", "image": "kit5.jpg", "pdf": "kit5-pdf.pdf", "required": false},
-					{"name": "SAVINGS INCENTIVE MATCH PLAN FOR EMPL OF SMALL EMPLOYERS (5304-SIMPLE)", "image": "component3.jpg", "pdf": "component3.pdf", "required": false}
+					{"name": "SAVINGS INCENTIVE MATCH PLAN FOR EMPL OF SMALL EMPLOYERS (5304-SIMPLE)", "image": "component3.jpg", "pdf": "component3.pdf", "required": false},
+					{"name": "Consent to Designation of Annuity Contract Beneficiary AZ, CA, ID, LA, NM, NV, PR, TX, WA, WI (AAFF-0001M3)", "image": "component4.jpg", "pdf": "component4.pdf", "required": false},
+					{"name": "The Soloist Annuity Application AO 07/18 (APO-1807-10)", "image": "component5.jpg", "pdf": "component5.pdf", "required": false},
+					{"name": "State Specific Forms -Replacement Forms WA (AD-SSP-WA)", "image": "component6.jpg", "pdf": "component6.pdf", "required": false}
 				];
 	
 	$scope.send_to_email = null;
