@@ -15,11 +15,32 @@ app.controller('kitBuilderController', function($scope) {
 					{"name": "FI ID WH Your Life IUL Protector Client Kit IN", "image": "kit5.jpg", "pdf": "kit5-pdf.pdf", "required": false},
 					{"name": "SAVINGS INCENTIVE MATCH PLAN FOR EMPL OF SMALL EMPLOYERS (5304-SIMPLE)", "image": "component3.jpg", "pdf": "component3.pdf", "required": false}
 				];
+	
+	$scope.send_to_email = null;
+	$scope.show_email = false;
 
 	// Functions
 
 	$scope.displayPdf = function(pdf) {
 		window.open('../pdf/' + pdf);
+	};
+
+	$scope.sendEmail = function(email) {
+		if (!email) {
+			alert('Please enter an email address');
+		} else {
+			alert('Email sent!');
+			$scope.show_email = false;
+			$scope.send_to_email = null;
+		}
+	};
+
+	$scope.showEmail = function() {
+		$scope.show_email = !$scope.show_email;
+	};
+
+	$scope.cancelEmail = function() {
+		$scope.show_email = false;
 	};
 
 	// Retrieving Data
