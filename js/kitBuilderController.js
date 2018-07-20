@@ -22,6 +22,15 @@ app.controller('kitBuilderController', function($scope) {
 	$scope.send_to_email = null;
 	$scope.show_email = false;
 
+	$scope.first_name = null;
+	$scope.last_name = null;
+	$scope.address_1 = null;
+	$scope.address_2 = null;
+	$scope.city = null;
+	$scope.state = null;
+	$scope.zip = null;
+	$scope.show_order = false;
+
 	// Functions
 
 	$scope.displayPdf = function(pdf) {
@@ -39,11 +48,26 @@ app.controller('kitBuilderController', function($scope) {
 	};
 
 	$scope.showEmail = function() {
+		$scope.show_order = false;
 		$scope.show_email = !$scope.show_email;
 	};
 
 	$scope.cancelEmail = function() {
 		$scope.show_email = false;
+	};
+
+	$scope.placeOrder = function() {
+		alert('Order placed!');
+		$scope.show_order = false;
+	};
+
+	$scope.showOrder = function() {
+		$scope.show_email = false;
+		$scope.show_order = !$scope.show_order;
+	};
+
+	$scope.cancelOrder = function() {
+		$scope.show_order = false;
 	};
 
 	// Retrieving Data

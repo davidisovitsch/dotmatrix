@@ -36,7 +36,7 @@ td {
 	display:none;
 }
 
-.componentheader {
+.component_header {
 	background: #1c57a5;
 	color: white;
     text-align: center;
@@ -56,6 +56,32 @@ td {
     cursor: pointer;
 }
 
+.email_form,
+.address_form {
+	max-width: 500px;
+	padding: 15px;
+	margin: 10px;
+}
+
+.email_form input[type="text"],
+.address_form input[type="text"] {
+	padding: 8px;
+	margin: 1px;
+    font-size: 16px;
+}
+
+.email_form input[type="button"],
+.address_form input[type="button"] {
+    background-color: #1c57a5;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+	margin: 1px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 </style>
 
 <body ng-app="kitBuilder">
@@ -64,9 +90,9 @@ td {
 
 		<table>
 			<tr>
-				<td style="width:25%" class="componentheader">Required</td>
-				<td style="width:25%" class="componentheader">Optional</td>
-				<td style="width:50%" class="componentheader"></td>
+				<td style="width:25%" class="component_header">Required</td>
+				<td style="width:25%" class="component_header">Optional</td>
+				<td style="width:50%" class="component_header"></td>
 			</tr>
 			<tr>
 				<td>
@@ -106,14 +132,28 @@ td {
 					<br>
 					<button class="button" ng-click="displayPdf('../pdf/kit1-pdf.pdf');">Quick Print</button>
 					<button class="button" ng-click="showEmail();">Email</button>
-					<button class="button">Place Order</button>
-					<br><br>
-					<div ng-show="show_email">
-						<label>Email address: 
-							<input type="text" ng-model="send_to_email" ng-maxlength="50" required>
-						</label>
-						<button class="button" ng-click="sendEmail(send_to_email);">Send</button>
-						<button class="button" ng-click="cancelEmail();">Cancel</button>
+					<button class="button" ng-click="showOrder();">Place Order</button>
+
+					<div ng-show="show_email" class="email_form">
+						<form> 
+							<input type="text" ng-model="send_to_email" placeholder="Email address" size="30"/><br>
+							<input type="button" ng-click="sendEmail(send_to_email);" value="Send"/>
+							<input type="button" ng-click="cancelEmail();" value="Cancel"/>
+						</form>
+					</div>
+
+					<div ng-show="show_order" class="address_form">
+						<form>
+							<input type="text" ng-model="first_name" placeholder="First Name"/>
+							<input type="text" ng-model="last_name" placeholder="Last Name"/><br>
+							<input type="text" ng-model="address_1" placeholder="Address 1" size="50"/><br>
+							<input type="text" ng-model="address_2" placeholder="Address 2" size="50"/><br>
+							<input type="text" ng-model="city" placeholder="City" size="10"/>
+							<input type="text" ng-model="state" placeholder="State" size="5"/>
+							<input type="text" ng-model="zip" placeholder="Zip Code" size="5"/><br>
+							<input type="button" ng-click="placeOrder();" value="Submit"/>
+							<input type="button" ng-click="cancelOrder();" value="Cancel"/>
+						</form>
 					</div>
 				</td>
 			</tr>
