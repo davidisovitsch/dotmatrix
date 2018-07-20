@@ -19,7 +19,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Pages
     .when("/strat", {templateUrl: "partials/strategic-framework.html", controller: "PageCtrl"})
     .when("/logo", {templateUrl: "partials/logo.htm", controller: "PageCtrl"})
-	.when("/icon-thumbs", {templateUrl: "partials/icon-thumbs.htm", controller: "PageCtrl"})
+	.when("/icon-thumbs", {templateUrl: "partials/kitBuilder.html", controller: "PageCtrl"})
     .when("/voice", {templateUrl: "partials/voice.htm", controller: "PageCtrl"})
     .when("/photo", {templateUrl: "partials/photo.htm", controller: "PageCtrl"})
     .when("/type", {templateUrl: "partials/type.htm", controller: "PageCtrl"})
