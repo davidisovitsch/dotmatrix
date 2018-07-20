@@ -18,6 +18,9 @@ app.controller('kitBuilderController', function($scope) {
 
 	// Functions
 
+	$scope.displayPdf = function(pdf) {
+		window.open('../pdf/' + pdf);
+	};
 
 	// Retrieving Data
 

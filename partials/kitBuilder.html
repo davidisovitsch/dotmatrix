@@ -73,7 +73,7 @@ td {
         					dnd-effect-allowed="move"
         					dnd-selected="selected = component"
         					ng-class="{'selected': selected === component">
-    						<a href="../pdf/{{component.pdf}}"><img src="../thumbnails/{{component.image}}"></a>
+    						<img src="../thumbnails/{{component.image}}" ng-click="displayPdf(component.pdf);"/>
 						</li>
 					</ul>
 				</td>
@@ -85,7 +85,7 @@ td {
         					dnd-effect-allowed="move"
         					dnd-selected="selected = component"
         					ng-class="{'selected': selected === component">
-    						<a href="../pdf/{{component.pdf}}"><img src="../thumbnails/{{component.image}}"></a>
+    						<img src="../thumbnails/{{component.image}}" ng-click="displayPdf(component.pdf);"/>
 						</li>
 					</ul>
 				</td>
